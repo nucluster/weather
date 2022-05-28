@@ -1,5 +1,6 @@
 __pycache__
-env
+venv/
 *.json
 *.txt
 .idea/
+.env
