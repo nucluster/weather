@@ -1,22 +1,20 @@
 Программа показывает погоду по текущим GPS координатам. Координаты берутся
-из программы `whereami`, которая работает (и работает отлично!) на компьютерах
-Mac. [О whereami](https://github.com/robmathers/WhereAmI).
+из `local_settings.py` локально сохранного на компьютере пользователя.
 
 Получение погоды по координатам происходит в сервисе
 [OpenWeather](https://openweathermap.org/api).
 
 Для запуска используйте python 3.10 (внешние библиотеки не требуются для работы
-приложения), в `config.py` проставьте API ключ для доступа к OpenWeather и 
+приложения), в `local_settings.py` проставьте API ключ для доступа к OpenWeather и 
 запустите:
 
-
+Для *nix систем
 ```bash
 ./weather
 ```
-
-Файл `weather` — исполнимый файл с python кодом, его можно открыть посмотреть.
-
-Данный материал подготовлен в качестве примера к [видео](https://www.youtube.com/watch?v=dKxiHlZvULQ) и [книге
-«Типизированный Python»](https://t.me/t0digital/151).
+Для Windows
+```
+python weather.py
+```
 
 
