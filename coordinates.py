@@ -3,7 +3,7 @@ from dataclasses import dataclass
 # from typing import Literal
 
 # import config
-from local_settings import *
+from local_settings import GPS_COORDS
 # from exceptions import CantGetCoordinates
 
 

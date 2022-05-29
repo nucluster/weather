@@ -49,7 +49,7 @@ class JSONFileWeatherStorage:
             self._jsonfile.write_text("[]")
 
     def _read_history(self) -> list[HistoryRecord]:
-        with open(self._jsonfile, "r") as f:
+        with open(self._jsonfile, "r", encoding="utf-8") as f:
             return json.load(f)
 
     def _write(self, history: list[HistoryRecord]) -> None:
