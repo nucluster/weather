@@ -1,4 +1,4 @@
-from weather_api_service import Weather
+from weather_api_service import Weather, WeatherType
 from datetime import datetime
 
 
@@ -12,8 +12,6 @@ def format_weather(weather: Weather) -> str:
 
 
 if __name__ == "__main__":
-    from datetime import datetime
-    from weather_api_service import WeatherType
     print(format_weather(Weather(
         temperature=25,
         weather_type=WeatherType.CLEAR,

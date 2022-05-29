@@ -4,5 +4,4 @@ venv/
 *.json
 *.txt
 .idea/
-config.py
 local_settings.py
